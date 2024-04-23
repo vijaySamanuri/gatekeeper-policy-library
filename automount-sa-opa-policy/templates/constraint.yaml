@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPSPAutomountServiceAccountTokenPod
 metadata:
-  name: psp-automount-serviceaccount-token-pod
+  name: psp-automount-serviceaccount-token-pod-{{ .Values.instance }}
 spec:
   match:
     kinds:
